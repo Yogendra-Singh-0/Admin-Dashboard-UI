@@ -228,7 +228,7 @@ const BorderGlow = ({
         />
       </span>
 
-      <div className="flex flex-col relative z-[1] h-full w-full">
+      <div className="flex flex-col relative z-[1] h-full w-full min-w-0">
         {children}
       </div>
     </div>

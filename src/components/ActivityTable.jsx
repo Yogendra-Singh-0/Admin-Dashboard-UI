@@ -101,7 +101,7 @@ export default function ActivityTable({ searchQuery = "", userProfile, isDarkMod
   return (
     <BorderGlow
       backgroundColor={isDarkMode ? '#0f172a' : '#ffffff'}
-      className="w-full h-full rounded-2xl"
+      className="w-full h-full rounded-2xl min-w-0"
       borderRadius={16}
     >
       <div className="bg-transparent rounded-2xl shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden transition-colors">
@@ -117,7 +117,7 @@ export default function ActivityTable({ searchQuery = "", userProfile, isDarkMod
             Reset Data
           </button>
         </div>
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto w-full">
           <table className="w-full text-left border-collapse min-w-[600px]">
             <thead>
               <tr className="bg-slate-50 dark:bg-slate-800/50 transition-colors">

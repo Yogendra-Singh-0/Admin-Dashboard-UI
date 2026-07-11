@@ -48,10 +48,10 @@ export default function Dashboard({ isDarkMode, searchQuery, userProfile }) {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="grid grid-cols-1 lg:grid-cols-3 gap-6"
       >
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 min-w-0">
           <ActivityTable searchQuery={searchQuery} userProfile={userProfile} isDarkMode={isDarkMode} />
         </div>
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 min-w-0">
           <QuickActions isDarkMode={isDarkMode} />
         </div>
       </motion.div>
